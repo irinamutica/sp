@@ -1,0 +1,20 @@
+%E1
+%initializez vectorii ceruti. a are ((2-0)/0.1)+1=21 de elemente, deci b trebuie sa aiba
+%tot 21 de elemente ca inmultirea sa fie valida
+
+a=0:0.1:2
+b=linspace(1,1,21)
+b(:)
+
+%a)
+%b' trebuie transpus ca sa se poata efectua inmultirea
+c=a*b'
+
+%b)
+d=b*a'
+%c si d au aceeasi valoare
+
+%c)
+%inmultesc element cu element folosind .*
+e=a.*b
+f=b.*a
